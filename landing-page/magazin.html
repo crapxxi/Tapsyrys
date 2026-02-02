@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapsyrys — Увеличьте прибыль вашего магазина</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Manrope', sans-serif; color: #1a1a1a; }
+        .hero-bg { background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%); padding: 80px 0; }
+        .btn-success { background-color: #16a34a; border: none; padding: 15px 30px; border-radius: 12px; font-weight: 700; }
+        .card-step { border: none; border-radius: 20px; background: #f8fafc; transition: 0.3s; }
+        .vs-card { border-radius: 20px; overflow: hidden; }
+        .text-success-custom { color: #16a34a; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-transparent py-4">
+        <div class="container">
+            <span class="navbar-brand fw-bold fs-3 text-success-custom">Tapsyrys <span class="text-dark">B2B</span></span>
+            <a href="#join" class="btn btn-outline-dark fw-bold">Занять место в тесте</a>
+        </div>
+    </nav>
+
+    <section class="hero-bg">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-3 fw-800 mb-4">Хватит переплачивать <br><span class="text-success-custom">поставщикам товаров</span></h1>
+                    <p class="lead text-muted mb-5 fs-4">Единая платформа для магазинов «у дома». Заказывайте всё в одном месте, находите низкие цены и зарабатывайте <b>на 200 000 ₸ больше</b> каждый месяц.</p>
+                    
+                    <div class="d-flex gap-3 mb-5">
+                        <div class="p-3 bg-white shadow-sm rounded-3">
+                            <h4 class="fw-bold mb-0 text-success-custom">0 ₸</h4>
+                            <small class="text-muted">Подключение</small>
+                        </div>
+                        <div class="p-3 bg-white shadow-sm rounded-3">
+                            <h4 class="fw-bold mb-0 text-success-custom">500+</h4>
+                            <small class="text-muted">Поставщиков</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card p-4 shadow-lg border-0" id="join" style="border-radius: 24px;">
+                        <h3 class="fw-bold mb-4">Стать первым партнером</h3>
+                        <p class="small text-muted mb-4">Мы ищем 10 магазинов в вашем районе для запуска пилотного проекта на льготных условиях.</p>
+                        <form action="https://formspree.io/f/xykpbjyl" method="POST">
+                            <div class="mb-3">
+                                <label class="form-label small fw-bold">Название магазина</label>
+                                <input type="text" name = "shop-name" class="form-control form-control-lg bg-light" placeholder="Напр: 'Магазин у Абая'">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small fw-bold">Ваш телефон</label>
+                                <input type="tel" name="shop-phone" class="form-control form-control-lg bg-light" placeholder="+7 (___) ___-__-__">
+                            </div>
+                            <button class="btn btn-success w-100 shadow-lg">Хочу экономить 200 000 ₸</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center fw-800 mb-5">Зачем вам EasyOrder?</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-5 bg-light vs-card h-100">
+                        <h4 class="fw-bold text-danger mb-4">Как сейчас (WhatsApp и звонки)</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">❌ Тратите 2-3 часа в день на переписки</li>
+                            <li class="mb-3">❌ Путаница в накладных и ценах</li>
+                            <li class="mb-3">❌ Поставщик забыл привезти товар</li>
+                            <li class="mb-3">❌ Покупаете дороже, так как нет выбора</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-5 border border-success border-2 vs-card h-100">
+                        <h4 class="fw-bold text-success-custom mb-4">С EasyOrder (Цифровая платформа)</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">✅ Заказ всех позиций за 5 минут</li>
+                            <li class="mb-3">✅ Автоматический поиск самой низкой цены</li>
+                            <li class="mb-3">✅ Умный график доставки под ваш график</li>
+                            <li class="mb-3">✅ Доступ к акциям напрямую от заводов</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-dark text-white">
+        <div class="container text-center py-5">
+            <h2 class="fw-bold mb-5 text-gradient">3 простых шага к прибыли</h2>
+            
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="display-5 fw-bold text-success-custom mb-2">01</div>
+                    <h5>Выбираете товар</h5>
+                    <p class="small text-secondary">Сравниваете цены у разных поставщиков в одном окне</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="display-5 fw-bold text-success-custom mb-2">02</div>
+                    <h5>Оформляете заказ</h5>
+                    <p class="small text-secondary">Система сама отправляет заявки всем дистрибьюторам</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="display-5 fw-bold text-success-custom mb-2">03</div>
+                    <h5>Принимаете товар</h5>
+                    <p class="small text-secondary">В удобное время и точно по вашей накладной</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center text-muted border-top mt-5">
+        <div class="container">
+            <p class="mb-0">© 2026 Tapsyrys B2B — Автоматизация ритейла.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
